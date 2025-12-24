@@ -1,0 +1,15 @@
+Exemplos de comandos:
+Para gerar grafos balanceados:
+
+USE:
+python scripts/runner.py single --tec qca --balanced --k-graphs 10 --arch-size 12 12 --num-inputs 3 --num-derivations 5 --visualize --output-dir datasets/results_balanceados
+
+2DDWAVE:
+python scripts/runner.py single --tec qca --qca-arch T --balanced --k-graphs 10 --arch-size 12 12 --num-inputs 3 --num-derivations 5 --visualize --output-dir datasets/results_balanceados
+
+Para gerar grafos desbalanceados:
+USE:
+python scripts/runner.py single --tec qca --unbalanced --k-graphs 10 --arch-size 20 20 --num-inputs 3 --num-derivations 5 --visualize --output-dir datasets/results_desbalanceados
+
+2DDWAVE:
+python scripts/runner.py single --tec qca --qca-arch T --unbalanced --k-graphs 10 --arch-size 20 20 --num-inputs 3 --num-derivations 5 --visualize --output-dir datasets/results_desbalanceados
